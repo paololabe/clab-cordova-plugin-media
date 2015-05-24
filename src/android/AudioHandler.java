@@ -378,6 +378,15 @@ public class AudioHandler extends CordovaPlugin {
         }
     }
 
+    public void setVolumeBalance(String id, float volumel,float volumer) {
+        AudioPlayer audio = this.players.get(id);
+        if (audio != null) {
+            audio.setVolumeBalance(volumel,volumer);
+        } else {
+            System.out.println("AudioHandler.setVolume() Error: Unknown Audio Player " + id);
+        }
+    }
+
     private void onFirstPlayerCreated() {
         origVolumeStream = cordova.getActivity().getVolumeControlStream();
         cordova.getActivity().setVolumeControlStream(AudioManager.STREAM_MUSIC);

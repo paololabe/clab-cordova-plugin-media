@@ -151,6 +151,10 @@ Media.prototype.release = function() {
 Media.prototype.setVolume = function(volume) {
     exec(null, null, "Media", "setVolume", [this.id, volume]);
 };
+Media.prototype.setVolumeBalance = function(volumel,volumer) {
+    exec(null, null, "Media", "setVolumeBalance", [this.id, volumel,volumer]);
+};
+
 
 /**
  * Audio has status update.

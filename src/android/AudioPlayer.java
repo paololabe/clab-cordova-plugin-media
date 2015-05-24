@@ -440,6 +440,9 @@ public class AudioPlayer implements OnCompletionListener, OnPreparedListener, On
     public void setVolume(float volume) {
         this.player.setVolume(volume, volume);
     }
+    public void setVolumeBalance(float volumel,float volumer) {
+        this.player.setVolume(volumel, volumer);
+    }
 
     /**
      * attempts to put the player in play mode
