@@ -16,7 +16,7 @@
        specific language governing permissions and limitations
        under the License.
  */
-package org.apache.cordova.media;
+package org.clab.apache.cordova.media;
 
 import android.net.Uri;
 
